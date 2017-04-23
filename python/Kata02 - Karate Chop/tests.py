@@ -1,7 +1,4 @@
-from day1 import chop
-
-
-def test_chop():
+def test_chop(chop):
     assert -1 == chop(3, [])
     assert -1 == chop(3, [1])
     assert 0 ==  chop(1, [1])
@@ -24,5 +21,3 @@ def test_chop():
     assert -1 == chop(6, [1, 3, 5, 7])
     assert -1 == chop(8, [1, 3, 5, 7])
 
-if __name__ == '__main__':
-    test_chop()
