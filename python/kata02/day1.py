@@ -1,4 +1,4 @@
-from tests import test_chop
+from . import test_chop
 
 
 def chop(val, seq):
@@ -8,4 +8,4 @@ def chop(val, seq):
         return -1
 
 if __name__ == '__main__':
-	test_chop(chop)
+    test_chop(chop)

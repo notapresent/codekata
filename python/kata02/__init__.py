@@ -20,4 +20,3 @@ def test_chop(chop):
     assert -1 == chop(4, [1, 3, 5, 7])
     assert -1 == chop(6, [1, 3, 5, 7])
     assert -1 == chop(8, [1, 3, 5, 7])
-
