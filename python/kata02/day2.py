@@ -1,4 +1,4 @@
-from kata02 import test_chop
+from tests import test_chop
 
 
 def chop(val, seq):
