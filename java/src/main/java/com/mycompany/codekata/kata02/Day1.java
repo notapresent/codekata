@@ -6,7 +6,7 @@ package com.mycompany.codekata.kata02;
  */
 public class Day1 {
   /**
-   * Binary search for value in array. 
+   * Binary search for value in array. This version uses loop.
    * 
    * @param val value to search for
    * @param arr array to search in
