@@ -1,7 +1,6 @@
 package com.mycompany.codekata.kata02;
 
 import junit.framework.Test;
-import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
 /**

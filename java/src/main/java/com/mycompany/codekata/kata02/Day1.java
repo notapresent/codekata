@@ -15,18 +15,18 @@ public class Day1 {
   public static int chop(int val, int[] arr) {
     int start = 0;
     int length = arr.length;
-    int c;
+    int cut;
 
     while (length > 1) {
-      c = length / 2;
+      cut = length / 2;
 
-      if (arr[start + c] > val) {
-        length = c;
-      } else if (arr[start + c] < val) {
-        start = c;
-        length = length - c;
+      if (arr[start + cut] > val) {
+        length = cut;
+      } else if (arr[start + cut] < val) {
+        start = cut;
+        length = length - cut;
       } else {    // arr[c] == val
-        return start + c;
+        return start + cut;
       }
     }
 
