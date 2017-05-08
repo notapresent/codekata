@@ -2,7 +2,7 @@ package com.mycompany.codekata.kata02;
 
 public class Day3 {
 
-  public class BinaryChopper {
+  public static class BinaryChopper {
 
     private final int[] arr;
 
@@ -26,15 +26,18 @@ public class Day3 {
       }
 
       cut = length / 2;
-      if (arr[start + cut] <= val) {
-        return index(val, start + cut, length - cut);
-      } else {
+
+      if (arr[start + cut] <= val) {  // right
+        return index(val,start + cut, length - cut);
+      } else {                        // left
         return index(val, start, cut);
       }
+
     }
   }
 
-  public static int chop(int val, int[] arr) {
-    return -1;
+  public static int chop(int val, int[] seq) {
+    BinaryChopper chopper = new BinaryChopper(seq);
+    return chopper.index(val);
   }
 }
