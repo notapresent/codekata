@@ -16,16 +16,20 @@ public class Day2 {
   public static int chop(int val, int[] arr, int start, int length) {
     int cut;
 
+    if (arr.length == 0)  {
+      return -1;
+    }
+
     if (length == 1) {
       return arr[start] == val ? start : -1;
     }
 
     cut = length / 2;
 
-    if (arr[start + cut] > val) {
+    if (arr[start + cut] <= val) {  // right
+      return chop(val, arr, start + cut, length - cut);
+    } else {                        // left
       return chop(val, arr, start, cut);
-    } else {
-      return chop(val, arr, start + cut, cut);
     }
   }
 
