@@ -8,4 +8,9 @@ public class Day3Test extends ChopTest {
   public static Test suite() {
     return new TestSuite(Day3Test.class);
   }
+
+  public int chop(int val, int[] seq) {
+    return Day3.chop(val, seq);
+  }
+
 }

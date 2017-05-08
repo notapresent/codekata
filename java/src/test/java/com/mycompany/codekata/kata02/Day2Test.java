@@ -14,4 +14,9 @@ public class Day2Test extends ChopTest {
   public static Test suite() {
     return new TestSuite(Day2Test.class);
   }
+
+  public int chop(int val, int[] seq) {
+    return Day2.chop(val, seq);
+  }
+
 }

@@ -15,4 +15,8 @@ public class Day1Test extends ChopTest
     {
         return new TestSuite( Day1Test.class );
     }
+
+    public int chop(int val, int[] seq) {
+        return Day1.chop(val, seq);
+    }
 }
