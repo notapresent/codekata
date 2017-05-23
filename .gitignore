@@ -91,3 +91,5 @@ ENV/
 # PyCHarm artifacts
 .idea/
 
+*.dat
+
